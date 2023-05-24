@@ -31,7 +31,7 @@ img{
 }
 .container{
     max-width: 1140px;
- 
+
     margin: auto;
 }
 header,
@@ -80,12 +80,16 @@ footer{
     display: inline-block;
     transition: 0.5s ease;
     font-weight: 500;
+    border-color: #5E844D;
+    background-color: #5E844D;
+    border-radius: 10px 10px 10px 10px;
 }
 .btn-1:focus{
     outline: none;
 }
 .btn-1:hover{
     background-color: transparent;
+    color: #5E844D;
 }
 /* header */
 .header{
@@ -101,10 +105,10 @@ footer{
     background-color: #ffffff;
     box-shadow: 0 0 8px #cccccc;
 }
-.header .logo{  
+.header .logo{
     padding: 0 15px;
 }
-.header .logo a{ 
+.header .logo a{
     font-size: 30px;
     color: #ffffff;
     font-weight: bold;
@@ -215,6 +219,10 @@ footer{
     border-radius: 50%;
     animation: loaderSpin 2s linear infinite;
 }
+.gifts{
+    display: flex;
+  justify-content: center;
+}
 @keyframes loaderSpin{
     0%{
         transform: rotate(0deg);
@@ -278,8 +286,8 @@ footer{
     max-width: 100%;
     padding: 0 15px;
     text-align: center;
-   
-  
+
+
 }
 .home-section .home-content p{
     font-size: 24px;
@@ -335,7 +343,6 @@ footer{
 /* mempelai section */
 .mempelai-section{
     padding: 80px 0 0;
-    background-color: #dde5f2;
 }
 .mempelai-section .mempelai{
     flex: 0 0 50%;
@@ -345,13 +352,15 @@ footer{
     position: relative;
 }
 .mempelai-section .mempelai:nth-child(2)::before{
-    content: '';
+    content: '&';
     position: absolute;
     left: 0;
-    top: 0;
+    top: 158px;
     width: 1px;
     height: 100%;
-    background-color: #cccccc;
+    color: #7E9474;
+    font-size: 30px;
+
 }
 .mempelai-section .mempelai i.fa-heart{
     position: absolute;
@@ -364,11 +373,10 @@ footer{
     top: 30%;
 }
 .mempelai-section .mempelai img{
-    max-width: 280px;
+    max-width: 224px;
     width: 100%;
     border-radius: 50%;
-  
-
+    box-shadow: 1px 7px 13px 0px rgba(0, 0, 0, 0.4);
 }
 .mempelai-section .mempelai h3{
     font-size: 40px;
@@ -376,6 +384,7 @@ footer{
     font-family: "Great Vibes", cursive;
     font-weight: normal;
     letter-spacing: 2px;
+    color: #7E9474;
 }
 .mempelai-section .mempelai p{
     font-size: 16px;
@@ -407,7 +416,6 @@ footer{
 /* story section */
 .story-section{
     padding: 80px 0 80px;
-    background-color: #dde5f2;
 }
 .story-section .story-content{
     flex: 0 0 100%;
@@ -472,7 +480,7 @@ footer{
 .story-section .story-text h3{
     font-size: 24px;
     margin: 0 0 8px;
-    color: #000000;
+    color:#5E844D;
     font-weight: 500;
     text-transform: capitalize;
 }
@@ -492,11 +500,63 @@ footer{
 }
 
 /* event section */
+element.style {
+}
+.elementor-shape-top {
+    top: -1px;
+}
+.elementor-shape {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+}
+.elementor *, .elementor :after, .elementor :before {
+    box-sizing: border-box;
+}
+.elementor-30007 .elementor-element.elementor-element-3cda5c0 > .elementor-shape-top .elementor-shape-fill {
+    fill: #f00000;
+}
+.elementor-shape .elementor-shape-fill {
+    fill: #fff;
+    transform-origin: center;
+    transform: rotateY(0deg);
+}
+
+element.style {
+}
+.elementor-30007 .elementor-element.elementor-element-3cda5c0 > .elementor-shape-top svg {
+    width: calc(180% + 1.3px);
+    height: 35px;
+}
+
+.elementor-shape svg {
+    display: block;
+    width: calc(100% + 1.3px);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.elementor *, .elementor :after, .elementor :before {
+    box-sizing: border-box;
+}
+
+/* event end section */
 .event-section{
     padding: 80px 0 130px;
+    margin-top: 20px;
+    background-color: #FFF9F1;
+    background-image: url('../img/background/8369140.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 .event-section .section-title h2{
-    color: #ffffff;
+    color: #7E9474;
+    z-index: 9999;
 }
 .event-section .event-item{
     flex: 0 0 33.33%;
@@ -512,7 +572,7 @@ footer{
     background-color: #ffffff;
     padding: 60px 45px 100px;
     text-align: center;
-    box-shadow: 0 0 10px #888888;
+    box-shadow: 10px 10px 20px #888888;
     flex: 0 0 100%;
     max-width: 100%;
     position: relative;
@@ -527,6 +587,7 @@ footer{
     bottom: 15px;
     border: 5px solid transparent;
     z-index: -1;
+    border-color: #7E9474;
 }
 .event-section .event-item-inner h3{
     color: #000000;
@@ -542,6 +603,7 @@ footer{
     display: block;
     font-weight: 500;
     font-size: 16px;
+    color:#5E844D;
 }
 .event-section .event-item-inner span.time{
     margin-bottom: 15px;
@@ -634,7 +696,7 @@ footer{
     border: 1px solid transparent;
     display: block;
     text-align: center;
-    line-height: 32px;  
+    line-height: 32px;
     border-radius: 20%;
     transition: 0.5s ease;
 }
@@ -644,6 +706,8 @@ footer{
 /* foto section */
 .gallery-section{
     padding: 80px 0 80px;
+    background-color: transparent;
+    background-image: radial-gradient(at center center, #9bb28a 0%, #5E844D 100%);
 }
 .gallery-section .gallery-item{
     flex: 0 0 33.33%;
@@ -693,7 +757,7 @@ footer{
     display: block;
     height: 40px;
     color: #ffffff;
-    font-size: 16px; 
+    font-size: 16px;
     position: absolute;
     left: 0;
     top: 0;
@@ -751,9 +815,12 @@ footer{
 .rsvp-section{
     padding: 80px 0 80px;
 }
-.rsvp-section .section-title h2,
+.rsvp-section .section-title h2
+{
+    color: #5E844D;
+}
 .rsvp-section .section-title p{
-    color: #ffffff;
+    color: #444444;
 }
 .rsvp-section .section-title p{
     margin: 10px 0 0;
@@ -775,7 +842,7 @@ footer{
 .rsvp-section .form .input-grup{
     flex: 0 0 100%;
     max-width: 100%;
-    padding: 0 15px;
+    padding: 0 228px;
 }
 .rsvp-section .form .input-grup.w50{
     flex: 0 0 50%;
@@ -812,7 +879,9 @@ footer{
         max-width: 100%;
         height: auto;
     }
+
 }
+
 .bottom-right-decoration{
     position: absolute;
     width: 370px;
@@ -850,7 +919,7 @@ footer{
     font-family: "Great Vibes", cursive;
 	font-style: normal;
 	font-size: 30px;
-   
+
 }
 
 .judul p {
@@ -866,7 +935,7 @@ footer{
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('../img/wraper/latar.avif');
-  
+
 }
 /* .judul h2 {
 	font-family: 'Dancing Script', cursive;
@@ -899,12 +968,12 @@ footer{
 	display: block;
 }
 .buttom-right-decoration{
-    
+
 } */
 /* footer */
 .footer{
     padding: 120px 0 120px;
-    
+
 }
 .footer .footer-content{
     flex: 0 0 100%;
@@ -1042,10 +1111,7 @@ body.dark .people-section .people-item-inner img,
 body.dark .header.fixed{
     box-shadow: 0 0 10px #000000;
 }
-body.dark .story-section .story-content::before,
-body.dark .mempelai-section .mempelai:nth-child(2)::before{
-    background-color: #333333;
-}
+
 body.dark p.copyright-text,
 body.dark .rsvp-section .form .input-control,
 body.dark .event-section .event-item-inner h3,
@@ -1072,9 +1138,9 @@ body.dark .header.fixed{
         font-family: "Great Vibes", cursive;
         font-style: normal;
         font-size: 20px;
-       
+
     }
-    
+
     .judul p {
         color: #000000;
         margin: 30px 0 20px;
@@ -1082,4 +1148,10 @@ body.dark .header.fixed{
         letter-spacing: 3px;
         font-size: 10px;
     }
+
+}
+.texts{
+    text-align: center;
+    padding-top:10px;
+    font-size:22px
 }
