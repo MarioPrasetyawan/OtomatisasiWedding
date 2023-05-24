@@ -380,6 +380,7 @@
                 <div class="rsvp-form">
                     <form class="form">
                         <div class="row">
+                            <p class="gifts">(BELUM FIKS KURANG MODAL AND LOGO)</p>
                             <p class="gifts">A.n Hawa Hamzah</p>
                             <p class="gifts">3770132591</p>
                             <div class="input-grup">
