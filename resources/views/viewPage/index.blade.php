@@ -374,33 +374,35 @@
                 <div class="section-title">
                     <h2>Wedding Gift</h2>
                     <p>Bagi keluarga dan sahabat yang berkenan mengirimkan hadiah, silahkan mengirimkannya melalui tautan berikut :</p>
+                    <button id="inout" class="btn-1" style="margin-top: 30px">Kirim Hadiah</button>
                 </div>
             </div>
-            <div class="row">
+            <div id="div1" class="row" style="display:none;" >
                 <div class="rsvp-form">
-                    <form class="form">
+                    <div class="form">
                         <div class="row">
-                            <p class="gifts">(BELUM FIKS KURANG MODAL AND LOGO)</p>
+                            <img  src="/assets/Pages/assets/img/icons/BCA.png" style="width:150px;  margin: 0 auto;
+                            text-align: center;"/>
                             <p class="gifts">A.n Hawa Hamzah</p>
-                            <p class="gifts">3770132591</p>
+                            <p id="p" class="gifts">08776543</p>
                             <div class="input-grup">
-                                <button type="submit" class="btn-1">Salin</button>
+                                <button onclick="jscopy('p')" class="btn-1">Salin</button>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
-            <div style="margin-top: 25px" class="row">
+            <div id="div2" style="margin-top:25px; display:none;" class="row">
                 <div class="rsvp-form">
-                    <form class="form">
+                    <div class="form">
                         <div class="row">
                             <p class="gifts">Kirim Kado</p>
-                            <p class="gifts">Jl. Pahlawan jakarta</p>
+                            <p id="p2" class="gifts">Jl. Pahlawan jakarta</p>
                             <div class="input-grup">
-                                <button type="submit" class="btn-1">Salin</button>
+                                <button onclick="jscopy('p2')" class="btn-1">Salin</button>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -515,6 +517,33 @@
         AOS.init();
 
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        function jscopy(elementID){
+        var jc = document.getElementById(elementID).textContent;
+        cp(jc);
+        }
+        function cp(jc) {
+           var el = document.createElement('textarea');
+           el.value = jc;
+           el.setAttribute('readonly', '');
+           el.style = {position: 'absolute', left: '-9999px'};
+           document.body.appendChild(el);
+           el.select();
+           document.execCommand('copy');
+           document.body.removeChild(el);
+
+          }
+        </script>
+        <script>
+            $(document).ready(function(){
+              $("#inout").click(function(){
+                $("#div1").fadeToggle("slow");
+                $("#div2").fadeToggle("slow");
+
+              });
+            });
+            </script>
 </body>
 
 </html>
