@@ -374,7 +374,8 @@
                 <div class="section-title">
                     <h2>Wedding Gift</h2>
                     <p>Bagi keluarga dan sahabat yang berkenan mengirimkan hadiah, silahkan mengirimkannya melalui tautan berikut :</p>
-                    <button id="inout" class="btn-1" style="margin-top: 30px">Kirim Hadiah</button>
+
+                    <button id="inout" class="btn-1 " style="margin-top: 30px"> <i class="fa-solid fa-gift" > </i>&nbsp;&nbsp;&nbsp; Kirim Hadiah</button>
                 </div>
             </div>
             <div id="div1" class="row" style="display:none;" >
@@ -396,6 +397,8 @@
                 <div class="rsvp-form">
                     <div class="form">
                         <div class="row">
+                            <i class="fa-solid fa-gift ccn" style=" margin: 0 auto;
+                            text-align: center;"></i>
                             <p class="gifts">Kirim Kado</p>
                             <p id="p2" class="gifts">Jl. Pahlawan jakarta</p>
                             <div class="input-grup">
