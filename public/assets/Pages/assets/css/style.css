@@ -814,6 +814,7 @@ element.style {
 /* rsvp section */
 .rsvp-section{
     padding: 80px 0 80px;
+    background-color: #FFF9F1;
 }
 .rsvp-section .section-title h2
 {
@@ -973,7 +974,8 @@ element.style {
 /* footer */
 .footer{
     padding: 120px 0 120px;
-
+    background-color: transparent;
+    background-image: radial-gradient(at center center, #9bb28a 0%, #5E844D 100%);
 }
 .footer .footer-content{
     flex: 0 0 100%;
@@ -1012,7 +1014,7 @@ element.style {
 }
 .footer .footer-content .couple-name h2 a{
     font-family: "Great Vibes", cursive;
-    color: #000000;
+    color: #ffffff;
     font-weight: normal;
     display: block;
     text-decoration: none;
@@ -1025,7 +1027,7 @@ element.style {
 .footer .footer-content p{
     font-size: 40px;
     font-family: "Great Vibes", cursive;
-    color: #000000;
+    color: #ffffff;
     margin: 0;
     font-weight: normal;
     text-align: center;
@@ -1159,3 +1161,29 @@ body.dark .header.fixed{
 .ccn{
     height: 50px;
 }
+
+
+/* footer */
+/* .elementor-shape[data-negative=false].elementor-shape-bottom, .elementor-shape[data-negative=true].elementor-shape-top {
+    transform: rotate(180deg);
+}
+
+.elementor-shape-bottom {
+    bottom: -1px;
+}
+
+.elementor-shape {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+}
+
+.elementor-shape[data-negative=false].elementor-shape-bottom, .elementor-shape[data-negative=true].elementor-shape-top {
+    transform: rotate(180deg);
+}
+.elementor-shape-bottom {
+    bottom: -1px;
+} */
